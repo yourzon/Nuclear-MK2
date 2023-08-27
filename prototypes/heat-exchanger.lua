@@ -10,6 +10,8 @@ local heat_exchanger_MK2_entity = util.table.deepcopy(data.raw["boiler"]["heat-e
     heat_exchanger_MK2_entity.target_temperature = 600
     heat_exchanger_MK2_entity.minable.result = "Heat-Exchanger-MK2"
     heat_exchanger_MK2_entity.energy_source.min_working_temperature = 650
+    heat_exchanger_MK2_entity.next_upgrade = "heat_exchanger_MK3_entity"
+    heat_exchanger_MK2_entity.fast_replaceable_group = "steam-engine"
     heat_exchanger_MK2_entity.structure =
     {
         north = 
@@ -37,7 +39,6 @@ local heat_exchanger_MK2_entity = util.table.deepcopy(data.raw["boiler"]["heat-e
                 shift = util.by_pixel(-2, -0.5)
                 }
             }
-
         },
         south = 
         {
@@ -65,16 +66,16 @@ local heat_exchanger_MK2_entity = util.table.deepcopy(data.raw["boiler"]["heat-e
                 }
             }
         }
-
     }
 
 local heat_exchanger_MK3_entity = util.table.deepcopy(data.raw["boiler"]["heat-exchanger"])
     heat_exchanger_MK3_entity.name = "heat_exchanger_MK3_entity"
-    heat_exchanger_MK3_entity.energy_consumption = "90MW"
+    heat_exchanger_MK3_entity.energy_consumption = "130.3MW"
     heat_exchanger_MK3_entity.target_temperature = 1100
     heat_exchanger_MK3_entity.minable.result = "Heat-Exchanger-MK3"
-    heat_exchanger_MK3_entity.energy_source.max_temperature = 1100
-    heat_exchanger_MK3_entity.energy_source.min_working_temperature = 1050
+    heat_exchanger_MK3_entity.energy_source.max_temperature = 1500
+    heat_exchanger_MK3_entity.energy_source.min_working_temperature = 1100
+    heat_exchanger_MK3_entity.fast_replaceable_group = "steam-engine"
     heat_exchanger_MK3_entity.structure =
     {
         north = 
@@ -102,7 +103,6 @@ local heat_exchanger_MK3_entity = util.table.deepcopy(data.raw["boiler"]["heat-e
                 shift = util.by_pixel(-2, -0.5)
                 }
             }
-
         },
         south = 
         {
@@ -130,7 +130,6 @@ local heat_exchanger_MK3_entity = util.table.deepcopy(data.raw["boiler"]["heat-e
                 }
             }
         }
-
     }
 
 --item

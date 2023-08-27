@@ -2,11 +2,25 @@ local SuperRed = {r=1,g=0.2,b=0.2,a=1}
 
 --entity
 local reactor_MK2_entity = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
-    reactor_MK2_entity.heat_buffer.max_temperature = 2000
-    reactor_MK2_entity.heat_buffer.min_working_temperature = 1000
     reactor_MK2_entity.name = "reactor_MK2_entity"
-    reactor_MK2_entity.minable.result = "Reactor-MK2"
+    reactor_MK2_entity.minable.result = "Reactor-MK2"    
+    reactor_MK2_entity.heat_buffer.max_temperature = 3000
+    reactor_MK2_entity.heat_buffer.min_working_temperature = 1000
+    reactor_MK2_entity.heat_buffer.specific_heat = "20MJ"
+    reactor_MK2_entity.consumption = "80MW" 
     reactor_MK2_entity.neighbour_bonus = 1.5
+    reactor_MK2_entity.fast_replaceable_group ="furnace"
+    reactor_MK2_entity.fuel_inventory_size = 10
+
+    reactor_MK2_entity.picture.layers = {
+        {
+            filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
+            tint = SuperRed,
+            width = 154,
+            height = 158,
+            shift = util.by_pixel(-6, -6),
+        }
+    }
 
 
 --item

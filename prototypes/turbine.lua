@@ -14,6 +14,8 @@ local turbin_MK2_entity = util.table.deepcopy(data.raw["generator"]["steam-turbi
     turbin_MK2_entity.fluid_box.filter = "steam"
     turbin_MK2_entity.max_power_output = "30MW"
     turbin_MK2_entity.effectivity = 1.07
+    turbin_MK2_entity.next_upgrade = "turbin_MK3_entity"
+    turbin_MK2_entity.fast_replaceable_group = "steam-engine"
     turbin_MK2_entity.horizontal_animation = 
     {
             layers = 
@@ -45,15 +47,16 @@ local turbin_MK2_entity = util.table.deepcopy(data.raw["generator"]["steam-turbi
 
 local turbin_MK3_entity = util.table.deepcopy(data.raw["generator"]["steam-turbine"]) 
     turbin_MK3_entity.name = "turbin_MK3_entity"
-    turbin_MK3_entity.fluid_usage_per_tick = 4
+    turbin_MK3_entity.fluid_usage_per_tick = 5
     turbin_MK3_entity.burns_fluid = false
     turbin_MK3_entity.scale_fluid_usage = false
-    turbin_MK3_entity.maximum_temperature = 600
+    turbin_MK3_entity.maximum_temperature = 1500
     turbin_MK3_entity.minable.result = "Turbine-MK3"
     turbin_MK3_entity.energy_source.usage_priority = "primary-output"
     turbin_MK3_entity.fluid_box.filter = "steam"
-    turbin_MK3_entity.max_power_output = "80MW"
-    turbin_MK3_entity.effectivity = 1.10
+    turbin_MK3_entity.max_power_output = "91MW"
+    turbin_MK3_entity.effectivity = 1.40
+    turbin_MK3_entity.fast_replaceable_group = "steam-engine"
     turbin_MK3_entity.horizontal_animation = 
     {
             layers = 

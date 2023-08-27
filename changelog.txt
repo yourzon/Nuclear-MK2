@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 27. 08. 2023
+  Major Features:
+    - added full feature MK3 Heat-Exchanger and turbine
+    - added full feature MK2 reactor and pump
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 23. 08. 2023
+  Major Features:
+    - split entity to seprate files.
+    - split tech to seprate files.
+    - (alpha) added Heat exchanger MK3.
+  Minor Features:
+    - change max temperature of heat-pipe.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 23. 07. 2023
+  Minor Features:
+    - change color code for tier
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 22. 07. 2023
+  Major Features:
+    - Initial release.
+    - This general section is the 0.1.0 version section.
