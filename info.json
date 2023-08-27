@@ -4,7 +4,7 @@
     "title": "Nuclear-MK2",
     "author": "yourzone",
     "factorio_version": "1.1",
-    "description": "This is add a stronger turbine and heat-exchanger and MK2 nuclear",
+    "description": "This is add two stronger turbine and heat-exchanger and a MK2 nuclear",
     "dependencies": [
         "base >= 1.0.0"
     ]

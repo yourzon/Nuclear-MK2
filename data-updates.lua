@@ -16,6 +16,6 @@ data.raw['generator']['steam-turbine'].fast_replaceable_group = "steam-engine"
 --upgrade reactor
 data.raw["reactor"]["nuclear-reactor"].next_upgrade = "reactor_MK2_entity"
 data.raw["reactor"]["nuclear-reactor"].fast_replaceable_group = "furnace"
-
+--upgrade pump
 data.raw["offshore-pump"]["offshore-pump"].next_upgrade = "pump_MK2_entity"
 data.raw["offshore-pump"]["offshore-pump"].fast_replaceable_group ="pipe"
