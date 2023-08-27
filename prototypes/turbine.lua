@@ -111,7 +111,6 @@ local turbin_MK3_item = util.table.deepcopy(data.raw["item"]["steam-turbine"])
 
 --recipe
 local turbin_MK2_recipe = util.table.deepcopy(data.raw["recipe"]["steam-turbine"])
-    turbin_MK2_recipe.enabled = true
     turbin_MK2_recipe.name = "Turbine-MK2"
     turbin_MK2_recipe.ingredients = {
         {type="item",name="iron-plate", amount=10},
@@ -122,7 +121,6 @@ local turbin_MK2_recipe = util.table.deepcopy(data.raw["recipe"]["steam-turbine"
     turbin_MK2_recipe.result = "Turbine-MK2"
 
 local turbin_MK3_recipe = util.table.deepcopy(data.raw["recipe"]["steam-turbine"])
-    turbin_MK3_recipe.enabled = true
     turbin_MK3_recipe.name = "Turbine-MK3"
     turbin_MK3_recipe.ingredients = {
         {type="item",name="steel-plate", amount=100},

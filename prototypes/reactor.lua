@@ -36,7 +36,6 @@ local reactor_MK2_item = util.table.deepcopy(data.raw["item"]["nuclear-reactor"]
 
 --recipe
 local reactor_MK2_recipe = util.table.deepcopy(data.raw["recipe"]["nuclear-reactor"])    
-    reactor_MK2_recipe.enabled = true
     reactor_MK2_recipe.name = "Reactor-MK2"
     reactor_MK2_recipe.ingredients = {
         {type="item",name="iron-plate", amount=10},

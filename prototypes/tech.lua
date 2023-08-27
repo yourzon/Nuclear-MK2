@@ -72,7 +72,7 @@ local MK3_tech = {
         },
         {
             type = 'unlock-recipe',
-            recipe = 'Offshore-Pump-MK2'
+            recipe = 'OffshorePump-MK2'
         },
 
     },

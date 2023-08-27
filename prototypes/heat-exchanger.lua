@@ -155,7 +155,6 @@ local heat_exchanger_MK3_item = util.table.deepcopy(data.raw["item"]["heat-excha
 
 --recipe
 local heat_exchanger_MK2_recipe = util.table.deepcopy(data.raw["recipe"]["heat-exchanger"])
-    heat_exchanger_MK2_recipe.enabled = true
     heat_exchanger_MK2_recipe.name = "Heat-Exchanger-MK2"
     heat_exchanger_MK2_recipe.ingredients = {
         {type="item",name ="iron-plate",amount = 10},
@@ -166,7 +165,6 @@ local heat_exchanger_MK2_recipe = util.table.deepcopy(data.raw["recipe"]["heat-e
     heat_exchanger_MK2_recipe.result = "Heat-Exchanger-MK2"
 
 local heat_exchanger_MK3_recipe = util.table.deepcopy(data.raw["recipe"]["heat-exchanger"])
-    heat_exchanger_MK3_recipe.enabled = true
     heat_exchanger_MK3_recipe.name = "Heat-Exchanger-MK3"
     heat_exchanger_MK3_recipe.ingredients = {
         {type="item",name="processing-unit", amount=20},
